@@ -1,0 +1,68 @@
+#1.program to caluclate the length of a string
+a=input('enter a string:')
+print(len(a))
+
+
+#2.program to count the no of characters in a string
+a=input('enter a string:')
+count=0
+for char in a:
+    count=count+1
+print('no of characters:',count)
+
+
+#3.Write a Python program to get a single string from two given strings,
+#separated by a space and swap the first two characters of each string
+a=input('enter string1:')
+b=input('enter string1:')
+x= b[:2] + a[2:]
+y= a[:2] + b[2:]
+print(x,y)
+
+
+#4.Write a Python script that takes input from the user and displays that input back in upper and lower cases.
+str=input("enter string:")
+print('uppercase:',str.upper())
+print('lowercase:',str.lower())
+
+
+#5.Write a Python program to remove a newline in Python.
+a='hell\no world\n'
+for  i in a:
+    if i=='\n':
+        continue
+    else:
+        print(i)
+
+
+#6.Write a Python program to count occurrences of a substring in a string.
+str='hello world how are you today'
+count=1
+for i in str:
+    if i==' ':
+        count=count+1;
+print('no of substrings:',count)
+
+
+#7.Write a Python program to convert a string in a list.
+a='hello world how are you today'
+print(list(a.split(' ')))
+
+
+#8.Write a Python program to perform Deletion of a character
+a=input('enter string:')
+print(a.strip('h'))
+
+
+#9.Write a program to print every character of a string entered by user in a new line using loop.
+a=input('enter string:')
+for i in a:
+    print(i) 
+
+
+#10.Write a program to find the length of the string "refrigerator" without using len function.
+str='refrigerator'
+count=0
+for i in str:
+    count=count+1
+print('length:',count)
